@@ -8,7 +8,7 @@
 * Data Exporter: export data to my gcp bucket and save by patitioned date
 (Was planning to do Q1 data only but as the 2021 data are up to 202107 only, so i grab all of it)
 
-<img src="/workspaces/DataZoomCamp_FinalProject/Assets/GCP_bucket.png">
+<img src="Assets/GCP_bucket.png">
 
 # 2 Set Up Pipeline 2 to load GCP parquet file to BigQuery (Week3)
 * Load my GCP bucket data into BQ
@@ -18,7 +18,7 @@
 * Transformer: do some fixes on the naming
 * Data Exporter: export the data to table finalprojectdataezoomcamp.nycdata.2021_green_taxi
 
-<img src="/workspaces/DataZoomCamp_FinalProject/Assets/BQ.png">
+<img src="Assets/BQ.png">
 
 # 3 Set up dbt project nyc_greentaxi2021 (Week4)
 * Use dbt to further clean the data
@@ -27,8 +27,8 @@
 * Set up test to check the data in the table for not null, uniqueness, accepted value, etc
 * Make use of the macros to add the ratecodeid_description and trip_type_description
 
-<img src="/workspaces/DataZoomCamp_FinalProject/Assets/patition_cluster.png">
-<img src="/workspaces/DataZoomCamp_FinalProject/Assets/dbt lineage.png">
+<img src="Assets/patition_cluster.png">
+<img src="Assets/dbt lineage.png">
 
 
 # 4 Create Report on Looker Studio
@@ -43,7 +43,7 @@
     - Because of covid, the airport pickup/dropoff trips are not much. But if driver wants to make the airport deal, go JFK Airport or be near will be best. It ranked top for both pickup and dropoff.
 
 
-<img src="/workspaces/DataZoomCamp_FinalProject/Assets/Screenshot 2024-04-15 004133.png">
+<img src="Assets/Screenshot 2024-04-15 004133.png">
 
 
 https://lookerstudio.google.com/s/ldeqmYqTJ7s
