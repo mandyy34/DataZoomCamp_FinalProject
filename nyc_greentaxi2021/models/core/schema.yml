@@ -114,3 +114,12 @@ models:
       - name: payment_type_description
         data_type: string
         description: ""
+      
+      - name: trip_type_description
+        data_type: string
+        description: ""
+      
+      - name: ratecodeid_description
+        data_type: string
+        description: ""
+

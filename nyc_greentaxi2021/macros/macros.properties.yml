@@ -10,3 +10,13 @@ macros:
         description: > 
           payment_type value.
           Must be one of the accepted values, otherwise the macro will return null
+  
+  - name: get_trip_type_description
+    description: >
+      This macro receives a trip_type and returns the corresponding description.
+    arguments:
+      - name: trip_type
+        type: int
+        description: > 
+          trip_type value.
+          Must be one of the accepted values, otherwise the macro will return null

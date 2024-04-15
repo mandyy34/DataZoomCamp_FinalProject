@@ -66,6 +66,13 @@ models:
               4=Nassau or Westchester
               5=Negotiated fare
               6=Group ride
+        tests: 
+          - accepted_values:
+              values: "{{ var('ratecodeid_values') }}"
+              severity: warn
+              quote: false
+      - name: ratecodeid_description
+        description: Describe the ratecode
       - name: Store_and_fwd_flag 
         description: > 
           This flag indicates whether the trip record was held in vehicle
@@ -102,3 +109,15 @@ models:
         description: Total amount of all tolls paid in trip.
       - name: Total_amount 
         description: The total amount charged to passengers. Does not include cash tips.
+      - name: Trip_type
+        description: >
+          A code indicating whether the trip was a street-hail or a dispatch
+          that is automatically assigned based on the metered rate in use but
+          can be altered by the driver.
+        tests: 
+          - accepted_values:
+              values: "{{ var('trip_type_values') }}"
+              severity: warn
+              quote: false
+      - name: trip_type_description
+        description: Description of the trip_type code
