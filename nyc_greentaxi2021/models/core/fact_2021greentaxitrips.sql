@@ -5,7 +5,7 @@
 }}
 
 with taxi_data as (
-    select * from {{ ref('stg_2021_greentaxi') }}
+    select * from {{ ref('stg_2021_greentaxi') }} where pickup_date between '2021-01-01' and '2021-07-31'
 ),
 
 taxi_zone as (
